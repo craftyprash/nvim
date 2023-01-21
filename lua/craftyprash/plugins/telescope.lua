@@ -12,7 +12,7 @@ return {
       {
         "<leader>ff",
         function()
-          require("telescope.builtin").find_files()
+          require("telescope.builtin").find_files({hidden=true})
         end,
         desc = "Find File",
       },
@@ -36,8 +36,17 @@ return {
     },
     config = function()
       local telescope = require("telescope")
+      local actions = require 'telescope.actions'
       telescope.setup({
         defaults = {
+          file_ignore_patterns = { "node_modules", ".git" },
+          mappings = {
+            i = {
+              ['<C-j>'] = actions.move_selection_next,
+              ['<C-k>'] = actions.move_selection_previous,
+              ['<Esc>'] = actions.close, -- use Esc even in insert mode to exit
+            },
+          },
           prompt_prefix = " ",
           selection_caret = " ",
           layout_strategy = "horizontal",
@@ -46,7 +55,7 @@ return {
           },
           sorting_strategy = "ascending",
         },
-        winblend = 10,
+       winblend = 10,
       })
       telescope.load_extension("fzf")
     end,

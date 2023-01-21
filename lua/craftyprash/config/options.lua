@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.g.theme = "oxocarbon" -- gloabl theme to use
+vim.g.theme = "oxocarbon" -- gloabl theme to use oxocarbon, tokyonight, gruvbox
 
 vim.opt.termguicolors = true -- True color support
 
@@ -16,6 +16,10 @@ vim.opt.relativenumber = true -- Relative line numbers
 vim.opt.scrolloff = 4 -- Lines of context
 
 vim.opt.cursorline = true -- Enable highlighting of the current line
+
+vim.opt.laststatus = 3 -- global statusline
+vim.opt.showmode = false
+vim.opt.cmdheight = 0
 
 vim.opt.signcolumn = "yes" -- Always show the signcolumn, otherwise it would shift the text each time
 
