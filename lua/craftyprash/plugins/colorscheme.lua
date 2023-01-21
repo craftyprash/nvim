@@ -21,4 +21,14 @@ return {
     end,
     enabled = vim.g.theme == "tokyonight",
   },
+  {
+    "navarasu/onedark.nvim",
+    lazy = vim.g.theme ~= "onedark",
+    config = function()
+      local onedark = require("onedark")
+      onedark.setup({ style = "darker" })
+      onedark.load()
+    end,
+    enabled = vim.g.theme == "onedark",
+  }
 }

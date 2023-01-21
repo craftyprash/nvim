@@ -1,7 +1,7 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.g.theme = "oxocarbon" -- gloabl theme to use oxocarbon, tokyonight, gruvbox
+vim.g.theme = "onedark" -- gloabl theme to use oxocarbon, tokyonight, gruvbox, onedark
 
 vim.opt.termguicolors = true -- True color support
 

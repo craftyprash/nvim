@@ -30,6 +30,7 @@ return {
       { "<leader>,", "<cmd>Telescope buffers show_all_buffers=true<cr>", desc = "Switch Buffer" },
       { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Buffers" },
       { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent" },
+      { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Grep" },
       { "<leader>gs", "<cmd>Telescope git_status<CR>", desc = "status" },
       { "<leader>hk", "<cmd>Telescope keymaps<cr>", desc = "Key Maps" },
       { "<leader>ho", "<cmd>Telescope vim_options<cr>", desc = "Options" },
